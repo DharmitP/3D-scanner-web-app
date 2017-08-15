@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+	<form method="get" action="/camera.py">
+		Sharpness (range: -100 to 100; default: 0):
+		<input type="number" name="sharpness" value="0" min="-100" max="100" required> <br> <br>
+		Contrast (range: -100 to 100; default: 0):
+		<input type="number" name="contrast" value="0" min="-100" max="100" required> <br> <br>
+		Brightness (range: 0 to 100; default: 50; 0 is black, 100 is white):
+		<input type="number" name="brightness" value="50" min="0" max="100" required> <br> <br>
+		Saturation (range: -100 to 100; default: 0):
+		<input type="number" name="saturation" value="0" min="-100" max="100" required> <br> <br>
+		EV Compensation (range: -10 to 10; default: 0):
+		<input type="number" name="ev" value="0" min="-10" max="10" required> <br> <br>
+		Width of Image (range: 50 to 3280; default: 3280):
+		<input type="number" name="width" value="3280" min="50" max="3280" required> <br> <br>
+		Height of Image (range: 50 to 2464; default: 2464):
+		<input type="number" name="height" value="2464" min="50" max="2464" required> <br> <br>
+		Name of Images (letters and numbers only; no spaces or any special characters):
+		<input type="text" name="name"  required> <br> <br>
+		<input type="submit" value="Take pictures!">
+	</form>
+</body>
+</html>
